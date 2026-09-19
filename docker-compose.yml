@@ -2,24 +2,20 @@ services:
 
   apache-static:
     build: ./apache-static
-    container_name: apache-static
     ports:
       - "82:80"
 
   nginx-static:
     build: ./nginx-static
-    container_name: nginx-static
     ports:
       - "94:80"
 
   node-dynamic:
     build: ./node-dynamic
-    container_name: node-dynamic
     ports:
       - "86:3000"
 
   flask-dynamic:
     build: ./flask-dynamic
-    container_name: flask-dynamic
     ports:
       - "88:5000"
