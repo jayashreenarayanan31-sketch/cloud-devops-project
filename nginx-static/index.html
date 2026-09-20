@@ -1,12 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Nginx Static Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevOpsHub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #94a3b8;
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        .pipeline {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .step {
+            background: #1e293b;
+            padding: 25px;
+            width: 170px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .step h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 70px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to Nginx Static Website</h1>
-    <p>This website is running using Nginx inside Docker.</p>
-    <p>Port: 94</p>
+
+<header>
+    <div class="logo">⚙️ DevOpsHub</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">CI/CD</a>
+        <a href="#">Monitoring</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <h1>
+        Automate.
+        <span class="highlight">Deploy.</span>
+        Monitor.
+    </h1>
+
+    <p>
+        A modern DevOps platform demonstrating continuous integration,
+        containerization, automated deployment and infrastructure monitoring.
+    </p>
+
+    <div class="pipeline">
+
+        <div class="step">
+            <h3>GitHub</h3>
+            <p>Source Code</p>
+        </div>
+
+        <div class="step">
+            <h3>Jenkins</h3>
+            <p>CI/CD</p>
+        </div>
+
+        <div class="step">
+            <h3>Docker</h3>
+            <p>Containers</p>
+        </div>
+
+        <div class="step">
+            <h3>Prometheus</h3>
+            <p>Metrics</p>
+        </div>
+
+        <div class="step">
+            <h3>Grafana</h3>
+            <p>Dashboards</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    DevOpsHub © 2026 | Powered by Nginx
+</footer>
+
 </body>
 </html>
-
