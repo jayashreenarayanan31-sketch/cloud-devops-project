@@ -2,20 +2,24 @@ services:
 
   apache-static:
     build: ./apache-static
+    restart: unless-stopped
     ports:
       - "82:80"
 
   nginx-static:
     build: ./nginx-static
+    restart: unless-stopped
     ports:
       - "94:80"
 
   node-dynamic:
     build: ./node-dynamic
+    restart: unless-stopped
     ports:
       - "86:3000"
 
   flask-dynamic:
     build: ./flask-dynamic
+    restart: unless-stopped
     ports:
       - "88:5000"
